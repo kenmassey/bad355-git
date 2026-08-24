@@ -143,7 +143,7 @@ and start the JupyterLab server.
 From JupyterLab, open a *Terminal* and enter:
 
 ```bash
-git clone https://github.com/kenmassey/bad355.git
+git clone https://github.com/kenmassey/bad355-git.git
 ```
 
 This will make a copy of shared class files in a folder called
