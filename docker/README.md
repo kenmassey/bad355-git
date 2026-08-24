@@ -73,7 +73,7 @@ Chromebooks run Docker inside the built-in Linux subsystem.
 1. **Enable Linux on ChromeOS:**
    - Open your Chromebook **Settings**.
    - Go to **About ChromeOS** > **Linux development environment** and select **Turn On**.
-   - Follow the prompt (allocating at least 15–20 GB of disk space is recommended).
+   - Follow the prompt (allocating at least 20 GB of disk space is recommended).
 
 2. **Install Docker inside the Linux Terminal:**
    - Open the **Terminal** app from your Chromebook app drawer.
@@ -110,7 +110,13 @@ cd ~/cn-analytics
 
 ---
 
-### Step 2: Launch the Environment
+### Step 2: Save the compose file.
+Download [docker-compose.yml](https://github.com/kenmassey/bad355/blob/main/docker/docker-compose.yml) and save it
+to your newly created *cn-analytics* folder.
+
+---
+
+### Step 3: Launch the Environment
 
 Run the following command inside your `~/cn-analytics` directory:
 
@@ -123,7 +129,7 @@ and start the JupyterLab server.
 
 ---
 
-### Step 3: Access JupyterLab
+### Step 4: Access JupyterLab
 
 1. Go to a browser (Firefox or Chrome)
    ```text
@@ -132,11 +138,27 @@ and start the JupyterLab server.
 
 ---
 
+### Stop 5: Clone the class github repository
+
+From JupyterLab, open a *Terminal* and enter:
+
+```bash
+git clone https://github.com/kenmassey/bad355.git
+```
+
+This will make a copy of shared class files in a folder called
+bad355 within your work folder.
+
+---
+
 ## Working with Files & Data Persistence
 
 - **Local File Sync:** The directory `~/cn-analytics` on your machine 
 maps directly to `/home/jovyan/work` inside JupyterLab. 
 Any file saved inside `work/` in JupyterLab is saved locally on your computer.
+
+You should periodically back up your files do another location, e.g.
+Dropbox or USB.
 
 ---
 
